@@ -75,6 +75,7 @@ function menu_press(){
     })
 }
 
+
 send_dectect()
 menu_press()
 nav_hover()
