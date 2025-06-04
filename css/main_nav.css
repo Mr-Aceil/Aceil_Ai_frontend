@@ -2,6 +2,7 @@
     display: flex;
     width: 100%;
     height: fit-content;
+    align-items: center;
     padding-top: 10px;
     justify-content: space-between;
 }
@@ -55,4 +56,30 @@
     /* height: fit-content; */
     justify-content: space-between;
     align-items: center;
+}
+
+#mobile_nav{
+    display: none;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+@media(max-width: 800px){
+    #mobile_nav{
+        display: flex;
+    }
+
+    .main_nav_icons{
+        display: none;
+    }
+
+    .main_in{
+        width: 95%;
+    }
+
+    .main_logo{
+        margin-left: 20px;
+    }
 }

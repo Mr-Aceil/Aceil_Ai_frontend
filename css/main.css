@@ -53,7 +53,7 @@ h1{
     font-size: 1.1em;
     color: white;
     padding-left: 30px;
-    width: 90%;
+    width: 80%;
     height: 20px;
     resize: none;
     overflow-y: auto;
@@ -87,4 +87,11 @@ h1{
 
 .hide{
     display: none;
+}
+
+
+@media (max-width: 800px) {
+    .h1{
+        font-size: clamp(1em, 5vw, 3em);
+    }
 }

@@ -13,24 +13,29 @@ const input= document.getElementById("input")
 
 function nav_hover(){
     nav.addEventListener("mouseover", function(){
-        upper_icons.style.width= '250px'
-        search.style.display= 'flex'
-        p.style.display= 'block'
-        p2.style.display= 'block'
-        icons2.style.display='flex'
+        if (nav.style.width= '50px'){
+            nav.style.width= '250px'
+            upper_icons.style.width= '250px'
+            search.style.display= 'flex'
+            p.style.display= 'block'
+            p2.style.display= 'block'
+            icons2.style.display='flex'
+        }
     })
 
 
     nav.addEventListener("mouseout", function(){
-        upper_icons.style.width= 'fit-content'
-        search.style.display= 'none'
-        p.style.display= 'none'
-        p2.style.display= 'none'
-        icons2.style.display='none'
+        if (nav.style.width='250px'){
+            nav.style.width= '50px'
+            upper_icons.style.width= 'fit-content'
+            search.style.display= 'none'
+            p.style.display= 'none'
+            p2.style.display= 'none'
+            icons2.style.display='none'
+        }
     })
 }
 
-nav_hover()
 
 
 function send_dectect(){
@@ -48,4 +53,28 @@ function send_dectect(){
     })
 }
 
+
+function menu_press(){
+    menu_btn.addEventListener("click", function(){
+        if (nav.style.width == '50px'){
+            nav.style.width = '250px'
+            upper_icons.style.width= '250px'
+            search.style.display= 'flex'
+            p.style.display= 'block'
+            p2.style.display= 'block'
+            icons2.style.display='flex'
+        }
+        else{
+            nav.style.width= '50px'
+            upper_icons.style.width= 'fit-content'
+            search.style.display= 'none'
+            p.style.display= 'none'
+            p2.style.display= 'none'
+            icons2.style.display='none'
+        }
+    })
+}
+
 send_dectect()
+menu_press()
+nav_hover()
