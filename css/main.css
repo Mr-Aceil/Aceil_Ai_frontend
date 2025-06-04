@@ -95,4 +95,15 @@ h1{
     .h1{
         font-size: clamp(1em, 5vw, 3em);
     }
+
+    .type_area{
+        margin: unset;
+    }
+    .main_in{
+        height: 96%;
+    }
+
+    main{
+        align-items: unset;
+    }
 }
